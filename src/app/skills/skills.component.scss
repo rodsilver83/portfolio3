@@ -1,0 +1,93 @@
+@import "../../styles.scss";
+
+.skills {
+	max-width: 600px;
+	background-color: $skills-color;
+	padding: $global-gutter * 4;
+	border-radius: $global-gutter * 2;
+	margin: 200px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.skills__title {
+	font-size: 6rem;
+	font-weight: 400;
+	margin: -105px 0 0;
+	color: #ffffff;
+	position: relative;
+}
+
+.skills__title-dark {
+	font-size: 6rem;
+	font-weight: 400;
+	position: absolute;
+	color: $skills-color;
+	left: 0;
+	max-height: 73px;
+	overflow: hidden;
+}
+
+.skills__charts {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// margin-top: $global-gutter * 4;
+}
+
+.skills__bar {
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-direction: column;
+	flex: 1;
+	margin: $global-gutter;
+}
+
+.skills__bar_a {
+	background-color: rgba($color: #fff, $alpha: 0.9);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	border-radius: $global-gutter $global-gutter 0 0;
+
+	&.bar_90 {
+		height: 75%;
+	}
+
+	&.bar_85 {
+		height: 75%;
+	}
+}
+
+.skills__bar_pct {
+	margin: $global-gutter * 2;
+	color: rgba($color: $skills-color, $alpha: 1);
+}
+
+.icon {
+	font-style: normal;
+	font-family: "Font Awesome 5 Brands";
+	padding: $global-gutter * 2;
+	color: rgba($skills-color, 1);
+	font-size: 2rem;
+}
+
+.html5:before {
+	content: "\f13b";
+}
+
+.angular:before {
+	content: "\f420";
+}
+
+.skills__name {
+	font-size: 0.9rem;
+	color: rgba(#ffffff, 1);
+	padding-top: 25px;
+	text-transform: lowercase;
+}

@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;300;700&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
+
+$primary-color: #006e92;
+$light-color: #c8fafc;
+$secondary-color: #118ab2;
+$global-gutter: 8px;
+
+$skills-color: #ff8585;
+$contact-color: #2a9d8f;
+
+* {
+	font-family: "Jost", sans-serif;
+	letter-spacing: 0.1rem;
+	font-weight: 300;
+	font-size: 1.2rem;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: rgba($color: $primary-color, $alpha: 0.2);
+	transition: all ease-in-out 0.6s;
+}
+
+main {
+	padding: $global-gutter * 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.full-page-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	padding: 16px;
+}
+
+.fa {
+	font-family: "Font Awesome 5 Brands";
+}
+
+.fas {
+	font-family: "Font Awesome 5 Free";
+}
+
+.skills_bg {
+	background-color: rgba($color: $skills-color, $alpha: 0.2);
+
+	header.header {
+		background-color: rgba($color: $skills-color, $alpha: 1);
+		color: #ffffff;
+	}
+}
+
+.contact_bg {
+	background-color: rgba($color: $contact-color, $alpha: 0.2);
+
+	header.header {
+		background-color: rgba($color: $contact-color, $alpha: 1);
+		color: #ffffff;
+	}
+}
+
+.contact__list {
+	list-style: none;
+	padding: 0;
+}
+
+// Responsive helpers
+
+@mixin small-screen {
+	@media only screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin large-screen {
+	@media only screen and (min-width: 769px) {
+		@content;
+	}
+}

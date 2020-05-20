@@ -1,0 +1,72 @@
+@import "../../styles.scss";
+
+.contact {
+	max-width: 600px;
+	background-color: $contact-color;
+	padding: $global-gutter * 2;
+	border-radius: $global-gutter * 2;
+	margin: 200px 0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	@include large-screen {
+		padding: $global-gutter * 4;
+	}
+}
+
+.contact__title {
+	font-size: 5rem;
+	font-weight: 400;
+	margin: -97px 0 0;
+	color: #ffffff;
+	position: relative;
+
+	@include large-screen {
+		font-size: 6rem;
+		margin: -105px 0 0;
+	}
+}
+
+.contact__title-dark {
+	font-size: 5rem;
+	font-weight: 400;
+	position: absolute;
+	color: $contact-color;
+	left: 0;
+	max-height: 65px;
+	overflow: hidden;
+
+	@include large-screen {
+		font-size: 6rem;
+		max-height: 73px;
+	}
+}
+
+.icon {
+	margin: 5px;
+	font-size: 1.5rem;
+	min-width: 2rem;
+	height: 25px;
+	color: rgba(#fff, 0.9);
+
+	@include large-screen {
+		margin: 5px;
+		font-size: 3rem;
+		min-width: 4rem;
+		height: 48px;
+	}
+}
+
+.contact__item {
+	display: flex;
+	align-items: center;
+
+	a,
+	a:active,
+	a:hover,
+	a:link {
+		color: rgba(#fff, 0.9);
+		text-decoration: none;
+	}
+}

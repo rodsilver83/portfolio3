@@ -1,0 +1,45 @@
+@import "../../styles.scss";
+
+.profile {
+	background-color: #006e92;
+	border-radius: $global-gutter * 2;
+	padding: $global-gutter * 4;
+	color: $light-color;
+	display: flex;
+	flex-direction: column;
+	max-width: 700px;
+	text-align: justify;
+	align-self: center;
+	margin-top: 150px;
+	line-height: 1.5rem;
+
+	@include large-screen {
+		margin-top: 150px;
+	}
+
+	p {
+		padding: $global-gutter * 2 0;
+		margin: 0;
+
+		&::first-letter {
+			font-size: 2rem;
+			font-weight: 700;
+		}
+	}
+}
+
+.profile__pic {
+	border-radius: $global-gutter * 1;
+	height: 150px;
+	margin-top: -30px;
+}
+
+.profile__container {
+	border-radius: $global-gutter * 2;
+	background-color: #cee2e9;
+	padding: $global-gutter;
+	position: relative;
+	margin-top: -100px;
+	align-self: center;
+	height: 136px;
+}

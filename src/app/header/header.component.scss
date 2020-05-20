@@ -1,0 +1,51 @@
+@import "../../styles.scss";
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	background-color: $primary-color;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	color: $light-color;
+	transition: all ease-in-out 0.6s;
+}
+
+.header-title {
+	font-size: 1.5rem;
+	margin: $global-gutter * 1.5;
+	line-height: 1.5rem;
+
+	> span {
+		border-left: 1px solid $light-color;
+		padding-left: $global-gutter;
+	}
+}
+
+.header-navbar {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.header-links {
+	list-style: none;
+	padding: 0;
+	margin: $global-gutter;
+}
+
+.header-navbar_link {
+	display: inline;
+	margin: 0 $global-gutter;
+
+	> a,
+	a:active,
+	a:visited,
+	a:link,
+	a:hover {
+		color: $light-color;
+		text-decoration: none;
+		font-size: 1rem;
+	}
+}
